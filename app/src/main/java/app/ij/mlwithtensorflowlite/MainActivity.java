@@ -1,7 +1,4 @@
-/*
- * Created by ishaanjav
- * github.com/ishaanjav
- */
+
 
 package app.ij.mlwithtensorflowlite;
 
@@ -38,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     Button camera, gallery;
     ImageView imageView;
     TextView result;
-    int imageSize = 32;
+    int imageSize = 128;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             Model model = Model.newInstance(getApplicationContext());
 
             // Creates inputs for reference.
-            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 32, 32, 3}, DataType.FLOAT32);
+            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 128, 128, 3}, DataType.FLOAT32);
             ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize * 3);
             byteBuffer.order(ByteOrder.nativeOrder());
 
@@ -109,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"Apple", "Banana", "Orange"};
+            String[] classes = {"No Tumor!", "Pituitary Tumor!", "Meningioma Tumor!","Glioma Tumor!"};
             result.setText(classes[maxPos]);
 
             // Releases model resources if no longer used.
