@@ -1,5 +1,6 @@
 # Brain-MRI-Tumor-Detection-App
-All copyrights of the App code belongs to Ishaan Javali.
+All copyrights of the App code belongs to Ishaan Javali and the model belongs to me.
+I used the app and customized it on my data and deployed my tflite model to it.
 The App is used to detect the brain tumor using CNN with accuracy 90%.
 The model take an image and classify if there is a tumor or no and in case there is a tumor it classify the type of it (eg. Pituitary , Meningioma , Glioma)
 # Graph-Of-Accuracy
