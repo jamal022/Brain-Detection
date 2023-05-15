@@ -1,2 +1,3 @@
-# Image-Classification-App-with-Custom-TensorFlow-Model
-Learn how to code your own neural network in Python, then deploy it in an Image Classification App using TensorFlow Lite.
+#Brain-MRI-Tumor-Detection-App
+All copyrights of the App code belongs to Ishaan Javali.
+The App is used to detect the brain tumor using CNN with accuracy 90% 
